@@ -11,6 +11,16 @@ else {
     alert("Que pena, até a próxima ");
 }
 
-let numero = prompt("Digite o número:");
+const numeroSecreto = 7;
 
-alert(Number(numero) + 10);
+let numeroDigitado = prompt("Digite o número Secreto:");
+
+if (numeroSecreto == numeroDigitado) {
+    alert("Parabéns, você acertou");
+}
+else if (numeroSecreto > numeroDigitado) {
+    alert("É menor!");
+}
+else {
+    alert("É maior!");
+}
